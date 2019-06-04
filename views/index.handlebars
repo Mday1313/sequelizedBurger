@@ -1,0 +1,95 @@
+<div class="container">
+
+  <div class="jumbotron">
+
+    <h1>mmmhh BURGERS!</h1>
+    <br>
+  </div>
+
+
+
+  <div class="row">
+
+    <div class="card col-5">
+      <h2>Eat A Burger!!</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li>
+          <p>
+            <button data-id="{{id}}" data-newstatus="{{devoured}}" type= "submit" action="/{{this.id}}?_method=PUT" method="POST"class="change-status btn btn-dark">Devour!!</button>
+
+            {{this.id}}. {{burger_name}}
+
+          </p>
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ul>
+
+    </div>
+    <div id="burger-image" class="col-2">
+      <div class="row">
+        <div class="col-12">
+
+          <a id="icon" class="burger">
+            <span class="hamburger bun top"></span>
+            <span class="hamburger chez"></span>
+            <span class="hamburger meat"></span>
+            <span class="hamburger tomato"></span>
+            <span class="hamburger lettuce"></span>
+
+            <span class="hamburger bun bottom"></span>
+
+          </a>
+        </div>
+        <div class="homer col-12">
+          {{!-- <img src="../public/assets/img/homerimage-right.jpg" height="100%"> --}}
+        </div>
+      </div>
+    </div>
+    <div class="card col-4">
+      <h2>In Your Belly!</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>
+          <p>
+
+            {{this.id}}. {{this.burger_name}}
+
+          </p>
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+
+  </div>
+  <br>
+  <div class="row" id="new-burger">
+    <div class="card col-12">
+
+      <h2>Add a Burger</h2>
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="ca">Burger Name:</label>
+          <input type="text" id="ca" name="name">
+        </div>
+
+
+
+        <button class="btn btn-dark" type="submit">Add Burger</button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+</div>

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "18_Acad1a_PRISM=28?",
+    "database": "burgers_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "v5mcdqu8r6ap1un1",
+    "password": "i3y3dh440xt7zelo",
+    "database": "agvk7fle14maucyv",
+    "host": "pwcspfbyl73eccbn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
