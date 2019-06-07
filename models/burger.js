@@ -11,11 +11,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     devoured: {
       type: DataTypes.BOOLEAN,
-      // defaultValue is a flag that defaults a new todos complete value to false if
-      // it isn't supplied one
+      
       defaultValue: false
     }
   });
+  
   return Burger;
 };
 

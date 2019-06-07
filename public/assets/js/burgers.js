@@ -13,7 +13,7 @@ $(function () {
             data: newDevourStatus
         }).then(
             function () {
-                console.log("I am reloading");
+                
                 location.reload();
             }
         );

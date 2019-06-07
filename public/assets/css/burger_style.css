@@ -29,14 +29,14 @@ h2 {
 
 /* Burger Animation */
 #burger-image{
-  background:#fcfbfb;
+  background:#ffffff;
   border:5px solid #c5d8d6;
   /* border-radius: 50%; */
   height:380px;
   margin:0 auto;
   overflow:hidden;
   position: relative;
-  top: 200px;
+  top: 190px;
 
   transform: translateY(-50%);
   width:150px;
